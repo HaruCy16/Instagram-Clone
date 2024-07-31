@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  background-color: black;
+}
+* {
+  color: white;
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+/*Navbar styles*/
+.navbar {
+  margin-left: 20px;
+  padding-right: 50px;
+  font-size: 20px;
+  border-right: 1px solid rgba(128, 128, 128, 0.403);
+  position: fixed;
+}
+.navbar#navbar-text {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 10px;
+}
+#navbar-text {
+  margin-left: 10px;
+  width: 200px;
+}
+.navbar-header {
+  margin-bottom: 50px;
+  font-family: "Playwrite HR", cursive;
+}
+.navbar-item {
+  margin-bottom: 20px;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+.navbar-item img {
+  border-radius: 50%;
+  height: 25px;
+  border: 3px white solid;
+}
+.navbar-item:hover {
+  background-color: rgba(100, 100, 100, 0.1);
+  cursor: pointer;
+}
+.navbar-bottom {
+  margin-top: 240px;
+}
+
+/*body styles*/
+.profileStories {
+  display: flex;
+  flex-direction: row;
+}
+.profiles img {
+  border-radius: 50%;
+  height: 60px;
+  border: 3px solid;
+  border-color: red yellow orange pink;
+}
+.feed {
+  margin-top: 20px;
+}
+.instagram-body {
+  margin: 0 auto;
+}
+.posts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-bottom: 1px rgba(101, 101, 101, 0.683) solid;
+  padding-bottom: 10px;
+}
+.posts-info {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.posts img {
+  border-radius: 50%;
+  height: 60px;
+  display: inline-block;
+}
+.posts p {
+  margin-left: 10px;
+  display: inline-block;
+}
+.profile-information {
+  width: 400px;
+  position: relative;
+}
+.profile-information i {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.content {
+  margin: auto;
+}
+.content video {
+  border: 1px rgba(95, 95, 95, 0.528) solid;
+}
+.interact {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.interact i {
+  font-size: 25px;
+}
+.interact i:hover {
+  cursor: pointer;
+}
+.heart-icon {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.heart-icon.liked {
+  color: red;
+}
+#comment,
+#share {
+  margin-left: 20px;
+}
+#save {
+  margin-left: 265px;
+}
+.post-caption h4 {
+  margin-bottom: 1px;
+}
+.post-caption p {
+  margin-left: 0;
+  margin-top: 5px;
+}
+.comment-section input {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 370px;
+}
+.comment-section i:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 60px;
+  }
+  .navbar-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar-header {
+    display: none;
+  }
+  #navbar-text {
+    display: none;
+  }
+  .navbar-bottom {
+    margin: 0;
+  }
+  .feed {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  video {
+    height: 200px;
+    width: 100%;
+    border: none;
+  }
+}
